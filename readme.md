@@ -108,11 +108,11 @@ for image_set in sets:
 
 运行以上代码后，可以发现生成了voc格式的标签文件labels（显示数据集的具体标注数据），并且在data文件下出现了train、val、test的txt文件，保存了图片的路径。（带有图片的路径）
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)data-label.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/data-label.png" style="zoom:67%;" />
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)train-txt.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/train-txt.png" style="zoom:67%;" />
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)label.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/label.png" style="zoom:67%;" />
 
 
 
@@ -122,7 +122,7 @@ for image_set in sets:
 
 这里的yaml和以往的cfg文件是差不多的，但需要配置一份属于自己数据集的yaml文件。复制data目录下的coco.yaml，我这里命名为My_train.yaml 主要修改三个地方：
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)my_train.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/my_train.png" style="zoom:67%;" />
 
 a. 修改train,val,test的路径为自己刚刚生成的路径
 
@@ -134,37 +134,37 @@ c. names 里为自己数据集标注的类名称，这里是"stand"和”fall"
 
 models下有四个模型，smlx需要训练的时间依次增加，按照需求选择一个文件进行修改即可。这里修改了yolov5m.yaml，只需要将nc的类别修改为自己需要的即可。
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)model.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/model.png" style="zoom:67%;" />
 
 ##### 4、修改train.py并开始训练
 
 weights，yaml，data按照自己文件的路径修改， epochs迭代次数自己决定，这里仅用9次进行测训练。batch-size过高可能会影响电脑运行速度，根据自己电脑硬件条件决定增加还是减少修改完成，运行开始训练。
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)train.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/train.png" style="zoom:67%;" />
 
 ##### 6、训练过程
 
 （1）网络结构
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)network.png" alt="network" style="zoom: 50%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/network.png" alt="network" style="zoom: 50%;" />
 
 （2）训练epoch
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)epoch.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/epoch.png" style="zoom:67%;" />
 
 (3)训练结束
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)result.png" alt="result" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result.png" alt="result" style="zoom:67%;" />
 
 #### 二、训练结果
 
 ##### 1、相关训练文件
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)result_img.png" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result_img.png" style="zoom:67%;" />
 
 ##### 2、模型文件
 
-<img src="[D:\notebook\apply\img\](https://github.com/Dot-Moker/Yolov5-/blob/master/)result_model.png" alt="result_model" style="zoom:67%;" />
+<img src="https://github.com/Dot-Moker/Yolov5-/blob/master/result_model.png" alt="result_model" style="zoom:67%;" />
 
 #### 三、遇到的问题
 
